@@ -1,0 +1,44 @@
+4
+55
+666
+7777
+7777
+666
+55
+4
+
+
+
+
+
+
+#include <stdio.h>
+int main(void) {
+	// your code goes here
+     int n;
+      scanf("%d",&n);
+     int s;
+     scanf("%d",&s);
+    int i,j;
+    int count=s;
+     for(i=1;i<=n;i++)
+     {
+        for(j=s;j<=count;j++)
+        {
+            printf("%d",count);
+        }
+      count++;
+    printf("\n");
+    }
+ count--;
+for(i=n-1;i>=0;i--)
+  {
+    for(j=s;j<=count;j++)
+    {
+         printf("%d",count);
+    }
+   count--;
+  printf("\n");
+  }
+     return 0;
+}
