@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(void) {
+	// your code goes here
+    int n;
+    scanf("%d",&n);
+    int len;
+     len=2*n-1;
+    int i,j;
+     int min;
+    for(i=0;i<len;i++)
+    {
+      for(j=0;j<len;j++)
+      {
+       min=i<j?i:j;
+        min=min<len-i-1?min:len-i-1;
+       min=min<len-j-1?min:len-j-1;
+      printf("%d ",n-min);
+  }
+  printf("\n");
+   }
+	return 0;
+}
