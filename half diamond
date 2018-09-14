@@ -1,0 +1,41 @@
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+
+
+
+
+
+
+#include <stdio.h>
+
+int main(void) {
+	// your code goes here
+    int n;
+    scanf("%d",&n);
+    int i,j;
+    int count=1;
+    for(i=1;i<2*n;i++)
+     {
+        for(j=0;j<count;j++)
+         {
+            printf("*");
+         }
+        if(i<n)
+         {
+          count++;
+          }
+        else
+        {
+           count--;
+        }
+     printf("\n");
+   } 
+	return 0;
+}
