@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main(void) {
+	// your code goes here
+    int n,space=0,num=0,k=1;
+    scanf("%d",&n);
+    int i,j,m,l,number;
+    number=n;
+   for(i=0;i<n;i++)
+   {
+     for(j=0;j<space;j++)
+      {
+         printf(" ");
+      }
+     for(m=1;m<2*n-space;m++)
+      {
+         if(m%2==0)
+          {
+             printf("*");
+          }
+         else
+          {
+             printf("%d",++num);
+           }
+      }
+    printf("*");
+    for(l=1;l<2*n-space;l++)
+    {
+       if(l%2==0)
+       {
+         printf("*");
+        }
+      else
+       {
+         printf("%d",k+number*number);
+          k++;
+        }
+      
+    }
+    number--;
+    space=space+2;
+  printf("\n");
+  }
+ return 0;
+}
