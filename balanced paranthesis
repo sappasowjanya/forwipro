@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include<string.h>
+char stack[1000];
+int top=-1;
+void push(char c)
+{
+  stack[++top]=c;
+ }
+void pop()
+{
+  if(top==-1)
+  {
+    printf("not balanced");
+     exit(0);
+  }
+  else
+  {
+   top--;
+  }
+}
+int main(void) {
+	// your code goes here
+    char str[100];
+    scanf("%s",str);
+    int len=strlen(str);
+   int i;
+   for(i=0;i<len;i++)
+    {
+      if(str[i]=='(')
+       {
+          push(str[i]);
+       }
+       else if(str[i]==')')
+       {
+          pop();
+       }
+    }
+   if(top==-1)
+    {
+      printf("balanced");
+    }
+    else
+    {
+      printf("not");
+    }
+	return 0;
+}
